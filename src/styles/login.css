@@ -1,0 +1,107 @@
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background:
+    radial-gradient(circle at top left, rgba(139, 92, 246, 0.18), transparent 28%),
+    radial-gradient(circle at bottom right, rgba(34, 211, 238, 0.14), transparent 30%),
+    linear-gradient(135deg, #0b1020 0%, #111827 48%, #1e1b4b 100%);
+  padding: 2rem 0;
+}
+
+.login-page .container {
+  max-width: 460px;
+}
+
+.app-box {
+  background: rgba(18, 26, 43, 0.94);
+  border: 1px solid rgba(148, 163, 184, 0.16);
+  border-radius: 24px;
+  padding: 2rem;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(14px);
+}
+
+.app-box h2 {
+  font-weight: 800;
+  color: #f8fafc;
+  margin-bottom: 0.5rem;
+}
+
+.app-box .text-muted {
+  color: #94a3b8 !important;
+}
+
+.app-box .form-label {
+  font-weight: 600;
+  color: #dbeafe;
+}
+
+.app-box .form-control {
+  background: rgba(30, 41, 59, 0.95);
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  color: #e5e7eb;
+  border-radius: 14px;
+  padding: 0.75rem 0.95rem;
+  min-height: 48px;
+  box-shadow: none;
+}
+
+.app-box .form-control::placeholder {
+  color: #94a3b8;
+}
+
+.app-box .form-control:focus {
+  background: rgba(30, 41, 59, 0.95);
+  color: #ffffff;
+  border-color: rgba(34, 211, 238, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(34, 211, 238, 0.14);
+}
+
+.app-box .btn-primary {
+  min-height: 48px;
+  border-radius: 14px;
+  font-weight: 700;
+  border: none;
+  background: linear-gradient(90deg, #8b5cf6 0%, #ec4899 100%);
+  box-shadow: 0 10px 24px rgba(139, 92, 246, 0.28);
+}
+
+.app-box .btn-primary:hover,
+.app-box .btn-primary:focus {
+  filter: brightness(1.05);
+}
+
+.app-box .btn-outline-secondary {
+  border-radius: 14px;
+  border-color: rgba(148, 163, 184, 0.2);
+  color: #cbd5e1;
+  background: rgba(30, 41, 59, 0.95);
+}
+
+.app-box .btn-outline-secondary:hover,
+.app-box .btn-outline-secondary:focus {
+  background: rgba(51, 65, 85, 0.95);
+  color: #ffffff;
+  border-color: rgba(148, 163, 184, 0.28);
+}
+
+.app-box .alert-danger,
+.app-box .alert-success {
+  border-radius: 14px;
+}
+
+@media (max-width: 576px) {
+  .login-page {
+    padding: 1rem 0;
+  }
+
+  .app-box {
+    padding: 1.5rem;
+    border-radius: 20px;
+  }
+
+  .app-box h2 {
+    font-size: 1.5rem;
+  }
+}

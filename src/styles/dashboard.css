@@ -1,0 +1,163 @@
+.dashboard-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.42rem 0.82rem;
+  border-radius: 999px;
+  background: rgba(139, 92, 246, 0.14);
+  color: #ddd6fe;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  border: 1px solid rgba(139, 92, 246, 0.18);
+}
+
+.dashboard-hero-side {
+  padding: 1rem;
+  border-radius: 18px;
+  background: rgba(11, 16, 32, 0.42);
+  border: 1px solid rgba(148, 163, 184, 0.12);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.03);
+}
+
+.dashboard-stat-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.dashboard-card-meta {
+  color: #cbd5e1;
+  font-size: 0.92rem;
+  line-height: 1.45;
+  margin-top: 0.7rem;
+}
+
+.dashboard-mini-stat {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.95rem 0;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.12);
+  color: #cbd5e1;
+  font-size: 0.95rem;
+}
+
+.dashboard-mini-stat:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.dashboard-mini-stat span {
+  color: #94a3b8;
+}
+
+.dashboard-mini-stat strong {
+  color: #ffffff;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums lining-nums;
+  text-align: right;
+}
+
+.dashboard-table {
+  margin-bottom: 0;
+}
+
+.dashboard-table thead th {
+  white-space: nowrap;
+  color: #94a3b8;
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.14);
+  padding-top: 0.85rem;
+  padding-bottom: 0.85rem;
+}
+
+.dashboard-table tbody td {
+  color: #e5e7eb;
+  border-color: rgba(148, 163, 184, 0.08);
+  padding-top: 0.95rem;
+  padding-bottom: 0.95rem;
+  vertical-align: middle;
+}
+
+.dashboard-table tbody tr {
+  transition: background-color 0.2s ease;
+}
+
+.dashboard-table tbody tr:hover {
+  background: rgba(148, 163, 184, 0.06);
+}
+
+.dashboard-table td:last-child,
+.dashboard-table td:nth-child(4) {
+  font-variant-numeric: tabular-nums lining-nums;
+}
+
+.dashboard-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 32px;
+  padding: 0.42rem 0.82rem;
+  border-radius: 999px;
+  font-size: 0.76rem;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0.02em;
+  border: 1px solid transparent;
+}
+
+.badge-soft-success {
+  background: rgba(34, 197, 94, 0.14);
+  color: #86efac;
+  border-color: rgba(34, 197, 94, 0.18);
+}
+
+.badge-soft-danger {
+  background: rgba(239, 68, 68, 0.14);
+  color: #fca5a5;
+  border-color: rgba(239, 68, 68, 0.18);
+}
+
+.badge-soft-warning {
+  background: rgba(245, 158, 11, 0.14);
+  color: #fcd34d;
+  border-color: rgba(245, 158, 11, 0.18);
+}
+
+.badge-soft-secondary {
+  background: rgba(148, 163, 184, 0.14);
+  color: #cbd5e1;
+  border-color: rgba(148, 163, 184, 0.18);
+}
+
+@media (max-width: 768px) {
+  .dashboard-hero-side {
+    padding: 0.9rem;
+  }
+
+  .dashboard-stat-top {
+    align-items: center;
+  }
+
+  .dashboard-mini-stat {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .dashboard-mini-stat strong {
+    text-align: left;
+  }
+
+  .dashboard-table thead th,
+  .dashboard-table tbody td {
+    white-space: nowrap;
+  }
+}
